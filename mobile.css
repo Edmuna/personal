@@ -7,7 +7,7 @@
 }
 
 body {
-  background: url(./bg.jpg);
+  background: url(./image-1.png);
 }
 
 .navbar {
@@ -26,7 +26,7 @@ body {
 }
 
 .overlay {
-  background: darkgrey;
+  background: #838383;
   position: fixed;
   top: 0;
   left: 0;
@@ -34,6 +34,7 @@ body {
   z-index: 0;
   opacity: 0;
   transform: translateY(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
   pointer-events: none;
   width: 100%;
   height: 100%;
@@ -52,6 +53,7 @@ body {
 
 .navbar.closed {
   opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
   transform: translateY(-100%);
   pointer-events: none;
 }
@@ -107,7 +109,7 @@ ul {
   font-size: 2.5rem;
   margin: 1rem;
   cursor: pointer;
-  color: white;
+  color: black;
 }
 
 a {
@@ -123,17 +125,56 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  border: 2px solid black;
   border-radius: 2rem;
   max-width: 100vh;
-  height: 700px;
+  height: 400px;
+  margin-top: 2rem;
+  /* border: 2px solid black; */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 220px;
+}
+
+.fa-brands {
+  padding: 0.6em;
+}
+
+h1,
+h2 {
+  margin-top: 2rem;
+  font-family: "Prompt", sans-serif;
+  font-size: 24px;
+  color: #000000;
+}
+
+@keyframes pulsate {
+  0% {
+    border-color: rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 7px rgb(0, 0, 0, 0.5);
+  }
+  100% {
+    border-color: rgb(255, 255, 255);
+  }
 }
 
 img {
   flex: 1;
   max-width: 100%;
-  height: 50%;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  margin-bottom: 2rem;
+  height: 100px;
+  border-radius: 100%;
+  border: 2px solid rgb(255, 255, 255);
+  animation: pulsate 2s infinite;
 }
