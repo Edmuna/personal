@@ -8,7 +8,7 @@ x.addEventListener("click", () => {
   x.classList.add("closed");
   bars.classList.remove("closed");
   menu.classList.add("closed");
-  document.body.style.overflowY = "hidden";
+  // document.body.style.overflowY = "hidden";
   overlay.classList.remove("full");
 });
 
@@ -16,6 +16,6 @@ bars.addEventListener("click", () => {
   x.classList.remove("closed");
   bars.classList.add("closed");
   menu.classList.remove("closed");
-  document.body.style.overflowY = "static";
+  // document.body.style.overflowY = "static";
   overlay.classList.add("full");
 });
