@@ -16,6 +16,6 @@ bars.addEventListener("click", () => {
   x.classList.remove("closed");
   bars.classList.add("closed");
   menu.classList.remove("closed");
-  document.body.style.overflowY = "auto";
+  document.body.style.overflowY = "static";
   overlay.classList.add("full");
 });
