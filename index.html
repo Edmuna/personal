@@ -9,6 +9,13 @@
       media="screen and (max-width:768px)"
       href="mobile.css"
     />
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+       emailjs.init("1iqi5gSawssZ1Xp36");
+    })();
+ </script>
     <title>Edin Hamzić</title>
   </head>
   <body>
@@ -53,16 +60,8 @@
       <div class="first-div">
         <h1>MY STORY</h1>
         <p class="first-paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias
-          repellat vel consectetur distinctio nemo numquam culpa nulla dolores
-          sit unde, eaque veniam accusamus quasi labore delectus, nam ipsa
-          facilis voluptates animi non? Laboriosam perferendis exercitationem
-          commodi sit non aspernatur voluptatem quo a! Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Delectus nesciunt amet voluptates
-          reprehenderit recusandae ab quam hic! Atque, perspiciatis. Voluptates.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ad
-          sunt, fugiat labore aut repellat vero cumque blanditiis tenetur
-          mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Hello world! My name is Edin Hamzić, and I'm a 30-year-old self-taught front-end developer currently residing in Graz, Austria. In late 2022, I embarked on a journey to learn HTML, CSS, JavaScript and React, and this website represents my first public project in the field. Prior to pursuing a career in web development, I obtained a degree from the University of Sarajevo, specifically from the Faculty of Criminal Justice, Criminology, and Security Studies. Over the course of my life, I have gained valuable experience through various job opportunities, which have provided me with a diverse range of skills in the business domain.
+          In the section below, you will find a collection of small projects that I have worked on. These projects serve as demonstrations of my foundational knowledge and understanding of the programming languages I have learned. Although they may be modest in scope, they showcase my ability to apply key concepts and techniques effectively. Please take a moment to explore these projects and get a glimpse of my capabilities. If you have any questions or would like more information about a specific project, feel free to reach out.
         </p>
       </div>
       <div class="second-div">
@@ -116,7 +115,7 @@
     <section class="contact">
       <h1>CONTACT</h1>
       <div class="card">
-        <form class="form">
+        <form class="form import" id="myForm">
           <div class="group">
           <input placeholder="Name" type="text" required="">
           </div>
@@ -137,9 +136,9 @@
       </h3>
     </footer>
   </body>
+  <script src="script.js"></script> 
   <script
     src="https://kit.fontawesome.com/83677a6a4d.js"
     crossorigin="anonymous"
   ></script>
-  <script src="script.js"></script>
 </html>
