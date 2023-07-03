@@ -388,13 +388,14 @@ button {
 }
 
 footer {
-  border: 2px solid white;
+  border-top: 2px solid white;
   max-width: 100%;
   height: 70px;
   border-image: linear-gradient(to right, red, blue) 1;
   animation: borderTransition 2s linear infinite;
   text-align: center;
   padding: 1rem;
+
 }
 
 .footer-h3 {
