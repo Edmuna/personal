@@ -8,7 +8,9 @@
   }
 
   body {
-    background-color: black;
+    background-color: #121212;
+    scrollbar-width: thin;
+  scrollbar-color: #ffffff #ffffff;
   }
 
   .hero {
@@ -59,7 +61,7 @@
     border-left: 2px solid;
     border-image: linear-gradient(to right, red, blue) 1;
     animation: borderTransition 2s linear infinite;
-    background: black;
+    background: #121212;
   }
 
   .social-icons {
@@ -98,7 +100,7 @@
     border-bottom: 2px solid;
     border-image: linear-gradient(to right, red, blue) 1;
     animation: borderTransition 2s linear infinite;
-    background: black;
+    background: #121212;
   }
 
   @keyframes borderTransition {
@@ -425,7 +427,7 @@
   }
   
   .card {
-    background-color: #000000;
+    background-color: #121212;
     border-radius: 10px;
     padding: 10px;
     width: 350px;
@@ -463,7 +465,7 @@
   button {
     width: 50%;
     background-color: #ffffff;
-    color: #000000;
+    color: #121212;
     border: none;
     border-radius: 5px;
     padding: 10px;
