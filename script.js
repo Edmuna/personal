@@ -3,19 +3,20 @@ const bars = document.querySelector(".bar-icon");
 const menu = document.querySelector(".navbar");
 const blabla = document.querySelectorAll(".bar-icon.active");
 const overlay = document.querySelector(".overlay");
+const contactForm = document.querySelector(".contact");
 
 x.addEventListener("click", () => {
   x.classList.add("closed");
   bars.classList.remove("closed");
   menu.classList.add("closed");
-  // document.body.style.overflowY = "hidden";
   overlay.classList.remove("full");
+  contactForm.classList.remove("not-visible");
 });
 
 bars.addEventListener("click", () => {
   x.classList.remove("closed");
   bars.classList.add("closed");
   menu.classList.remove("closed");
-  // document.body.style.overflowY = "static";
   overlay.classList.add("full");
+  contactForm.classList.add("not-visible");
 });
