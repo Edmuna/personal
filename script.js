@@ -21,45 +21,29 @@ bars.addEventListener("click", () => {
   contactForm.classList.add("not-visible");
 });
 
-var serviceID = 'contact_service';
-var templateID = 'template_r0y7ias';
-var publicKey = '1iqi5gSawssZ1Xp36';
+const form = document.getElementById('myForm');
+const sender = document.getElementById("name");
+const email = document.getElementById("email");
+const msg = document.getElementById("message");
 
-var templateParams = {
-  name: 'James',
-  notes: 'Check this out!'
-};
-
-emailjs.send(serviceID, templateID, templateParams, publicKey)
-  .then(function(response) {
-     console.log('SUCCESS!', response.status, response.text);
-  }, function(error) {
-     console.log('FAILED...', error);
-  });
-
-emailjs.sendForm('second_email', 'template_r0y7ias', '.form')
-  .then(function(response) {
-     console.log('SUCCESS!', response.status, response.text);
-  }, function(error) {
-     console.log('FAILED...', error);
-  });
-
-$('#myForm').on('submit', function(event) {
-  event.preventDefault(); // prevent reload
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); 
   
-  var formData = new FormData(this);
-  formData.append('service_id', 'second_email');
-  formData.append('template_id', 'template_r0y7ias');
-  formData.append('user_id', '1iqi5gSawssZ1Xp36');
-
-  $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
-      type: 'POST',
-      data: formData,
-      contentType: false, // auto-detection
-      processData: false // no need to parse formData to string
-  }).done(function() {
-      alert('Your mail is sent!');
-  }).fail(function(error) {
-      alert('Oops... ' + JSON.stringify(error));
-  });
+  const templateParams = {
+    sender: sender.value,
+    email: email.value,
+    message: msg.value,
+  };
+  
+  emailjs.send('service_q83x05s', 'template_wle2anc', templateParams, "1iqi5gSawssZ1Xp36")
+    .then(function(response) {
+      console.log('SUCCESS!', response.status, response.text, response, templateParams);
+      sender.value = "";
+      email.value = "";
+      msg.value = "";
+      // Here the content of the button should be changed or some notification that the e-mail has been succesfully sent
+    })
+    .catch(function(error) {
+      console.log('FAILED...', error);
+    });
 });
