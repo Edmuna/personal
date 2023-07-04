@@ -9,17 +9,19 @@
       media="screen and (max-width:768px)"
       href="mobile.css"
     />
-    <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function(){
-       emailjs.init("1iqi5gSawssZ1Xp36");
-    })();
- </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("1iqi5gSawssZ1Xp36");
+      })();
+    </script>
     <title>Edin Hamzić</title>
   </head>
   <body>
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="header">
         <div class="icon">
           <i class="bar-icon fa-solid fa-bars fa-2xl"></i>
@@ -28,40 +30,116 @@
         <div class="main">
           <div class="text">
             <img class="img-profile" src="./dino-modified.jpg" alt="" />
+            <!-- <div class="h"> -->
             <div class="h">
               <h1>Edin Hamzić</h1>
               <h4>Web Developer</h4>
             </div>
-          </div>
-          <div class="social-icons">
-            <i class="fa-brands fa-github fa-2xl" style="color: white"></i>
-            <i class="fa-brands fa-linkedin fa-2xl" style="color: white"></i>
-            <i class="fa-brands fa-twitter fa-2xl" style="color: white"></i>
-            <i
-              class="fa-brands fa-square-instagram fa-2xl"
-              style="color: white"
-            ></i>
+            <!-- </div> -->
+            <!-- </div> -->
+            <div class="wrapper">
+              <button class="btn">
+                <i class="fa-solid fa-share-nodes fa-beat fa-2xl"></i>
+              </button>
+              <ul class="list">
+                <li class="item">
+                  <a
+                    class="links"
+                    href="https://github.com/Edmuna"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-github fa-2xl"
+                      style="color: rgb(255, 255, 255)"
+                    ></i
+                  ></a>
+                </li>
+                <li class="item" style="--d: 0.25s">
+                  <a
+                    class="links"
+                    href="https://www.linkedin.com/in/edin-hamzi%C4%87-655591235/"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-linkedin fa-2xl"
+                      style="color: white"
+                    ></i
+                  ></a>
+                </li>
+                <li class="item" style="--d: 0.5s">
+                  <a
+                    class="links"
+                    href="https://twitter.com/edinhmz"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-twitter fa-2xl"
+                      style="color: white"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="social-icons">
+            <a class="links" href="https://github.com/Edmuna" target="_blank">
+              <i class="fa-brands fa-github" style="color: white"></i
+            ></a>
+            <a
+              class="links"
+              href="https://www.linkedin.com/in/edin-hamzi%C4%87-655591235/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin" style="color: white"></i
+            ></a>
+            <a class="links" href="https://twitter.com/edinhmz" target="_blank">
+              <i class="fa-brands fa-twitter" style="color: white"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/ereda_eyewear/"
+              class="links"
+              target="_blank"
+            >
+              <i class="fa-brands fa-square-instagram" style="color: white"></i
+            ></a>
+          </div> -->
           </div>
         </div>
         <div class="overlay">
           <nav class="navbar closed">
             <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">PROJECTS</a></li>
-              <li><a href="#">CONTACT</a></li>
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#projects">PROJECTS</a></li>
+              <li><a href="#contact">CONTACT</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="first-div">
         <h1>MY STORY</h1>
         <p class="first-paragraph">
-          Hello world! My name is Edin Hamzić, and I'm a 30-year-old self-taught front-end developer currently residing in Graz, Austria. In late 2022, I embarked on a journey to learn HTML, CSS, JavaScript and React, and this website represents my first public project in the field. Prior to pursuing a career in web development, I obtained a degree from the University of Sarajevo, specifically from the Faculty of Criminal Justice, Criminology, and Security Studies. Over the course of my life, I have gained valuable experience through various job opportunities, which have provided me with a diverse range of skills in the business domain.
-          In the section below, you will find a collection of small projects that I have worked on. These projects serve as demonstrations of my foundational knowledge and understanding of the programming languages I have learned. Although they may be modest in scope, they showcase my ability to apply key concepts and techniques effectively. Please take a moment to explore these projects and get a glimpse of my capabilities. If you have any questions or would like more information about a specific project, feel free to reach out.
+          Hello world! My name is Edin Hamzić, and I'm a 30-year-old self-taught
+          front-end developer currently residing in Graz, Austria. In late 2022,
+          I embarked on a journey to learn HTML, CSS, JavaScript and React, and
+          this website represents my first public project in the field. Prior to
+          pursuing a career in web development, I obtained a degree from the
+          University of Sarajevo, specifically from the Faculty of Criminal
+          Justice, Criminology, and Security Studies. Over the course of my
+          life, I have gained valuable experience through various job
+          opportunities, which have provided me with a diverse range of skills
+          in the business domain. In the section below, you will find a
+          collection of small projects that I have worked on. These projects
+          serve as demonstrations of my foundational knowledge and understanding
+          of the programming languages I have learned. Although they may be
+          modest in scope, they showcase my ability to apply key concepts and
+          techniques effectively. Please take a moment to explore these projects
+          and get a glimpse of my capabilities. If you have any questions or
+          would like more information about a specific project, feel free to
+          reach out.
         </p>
       </div>
       <div class="second-div">
@@ -74,7 +152,7 @@
       </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <h1>PROJECTS</h1>
       <div class="grid-container-2">
         <div class="grid-projects grid-projects-1">
@@ -112,31 +190,50 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <h1>CONTACT</h1>
       <div class="card">
         <form class="form import" id="myForm">
           <div class="group">
-          <input placeholder="Name" type="text" required="" id="name" name="from_name">
+            <input
+              placeholder="Name"
+              type="text"
+              required=""
+              id="name"
+              name="from_name"
+            />
           </div>
-      <div class="group">
-          <input placeholder="E-Mail" type="email" id="email" name="email" required="">
+          <div class="group">
+            <input
+              placeholder="E-Mail"
+              type="email"
+              id="email"
+              name="email"
+              required=""
+            />
           </div>
-      <div class="group">
-          <textarea placeholder="Enter your message" id="message" name="message" rows="5" required=""></textarea>
-      </div>
+          <div class="group">
+            <textarea
+              placeholder="Enter your message"
+              id="message"
+              name="message"
+              rows="5"
+              required=""
+            ></textarea>
+          </div>
           <button type="submit">Submit</button>
         </form>
       </div>
     </section>
 
     <footer class="footer">
-      <h3 class="footer-h3"><i class="fa-solid fa-copyright fa-2xl" style="color: #ffffff;"></i>
-      Edin Hamzić 2023 Austria
+      <h3 class="footer-h3">
+        <i class="fa-solid fa-copyright fa-2xl" style="color: #ffffff"></i>
+        Edin Hamzić 2023 Austria
       </h3>
     </footer>
   </body>
-  <script src="script.js"></script> 
+  <script src="script.js"></script>
   <script
     src="https://kit.fontawesome.com/83677a6a4d.js"
     crossorigin="anonymous"
