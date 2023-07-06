@@ -65,6 +65,7 @@
     height: 50px;
     padding: 1;
     margin: 1;
+    margin-bottom: 1rem;
   }
 
   .social-icons {
@@ -361,7 +362,7 @@
     align-items: center;
     justify-content: center;
     height: 50px;
-
+    margin-top: 2rem;
   }
 
   .wrapper :is(.btn, .link) {
